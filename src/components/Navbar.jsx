@@ -6,7 +6,7 @@ const Navbar = () => {
     const navLinksRight = ['Chefs', 'Franchise', 'Contact'];
 
     return (
-        <nav className="sticky top-0 z-50 flex items-center justify-between px-10 py-4 bg-[#911a1c] text-white shadow-2xl border-b border-white/5">
+        <nav className="sticky top-0 z-50 flex items-center justify-between px-10 py-4 bg-[#911a1c] text-white shadow-md border-b border-white/5">
 
             {/* LEFT SIDE: Phone Info */}
             <div className="flex items-center gap-3 group cursor-pointer">
