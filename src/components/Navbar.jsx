@@ -36,7 +36,7 @@ const Navbar = () => {
                         </svg>
                     </div>
                     <h1 className="text-4xl font-black tracking-tighter italic">
-                        Pizza<span className="text-yellow-400">Point</span>
+                        K2<span className="text-yellow-400"> Pie</span>
                     </h1>
                 </div>
 

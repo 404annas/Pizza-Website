@@ -1,6 +1,6 @@
 import { Star } from "lucide-react";
 
-export default function PizzaCard({ pizza }) {
+export default function DrinksCard({ drink }) {
     return (
         <div
             className="
@@ -21,11 +21,11 @@ export default function PizzaCard({ pizza }) {
             {/* Image INSIDE card */}
             <div className="pt-6 flex justify-center">
                 <img
-                    src={pizza.image.src}
-                    alt={pizza.name}
+                    src={drink.image.src}
+                    alt={drink.name}
                     className="
-            w-60
-            h-60
+            w-full
+            h-80
             transition-all
             duration-300
             group-hover:scale-105 cursor-pointer
@@ -37,30 +37,30 @@ export default function PizzaCard({ pizza }) {
             <div className="px-6 pb-6">
                 {/* Rating */}
                 <div className="flex justify-center items-center mb-3">
-                    <div className="bg-yellow-400 flex items-center gap-1 text-white text-xl px-5 py-1.5 ">
-                        <Star size={20}/>
-                        <Star size={20}/>
-                        <Star size={20}/>
-                        <Star size={20}/>
-                        <Star size={20}/>
+                    <div className="bg-yellow-400 flex items-center gap-1 text-white text-xl px-5 py-1.5 mt-4">
+                        <Star size={20} />
+                        <Star size={20} />
+                        <Star size={20} />
+                        <Star size={20} />
+                        <Star size={20} />
                     </div>
-                    <span className="bg-black text-white font-medium text-base px-2 py-1">
-                        {pizza.rating}
+                    <span className="bg-black text-white font-medium text-base px-2 py-1 mt-4">
+                        {drink.rating}
                     </span>
                 </div>
 
                 {/* Name */}
                 <h3 className="text-sm tracking-tight uppercase mb-3 md:text-xl font-bold">
-                    {pizza.name}
+                    {drink.name}
                 </h3>
 
                 {/* Price */}
                 <div className="flex justify-center gap-2 text-sm -mt-4">
                     <span className="text-[#bd1f17] line-through font-bold text-lg md:text-xl">
-                        {pizza.oldPrice}
+                        {drink.oldPrice}
                     </span>
                     <span className="font-bold text-lg md:text-xl">
-                        {pizza.newPrice}
+                        {drink.newPrice}
                     </span>
                 </div>
             </div>
