@@ -24,8 +24,8 @@ export default function PizzaCard({ pizza }) {
                     src={pizza.image.src}
                     alt={pizza.name}
                     className="
-            w-60
-            h-60
+            w-80
+            h-full
             transition-all
             duration-300
             group-hover:scale-105 cursor-pointer
@@ -50,12 +50,12 @@ export default function PizzaCard({ pizza }) {
                 </div>
 
                 {/* Name */}
-                <h3 className="text-sm tracking-tight uppercase mb-3 md:text-xl font-bold">
+                <h3 className="text-3xl tracking-tight uppercase mb-3 md:text-xl font-black">
                     {pizza.name}
                 </h3>
 
                 {/* Price */}
-                <div className="flex justify-center gap-2 text-sm -mt-4">
+                <div className="flex justify-center gap-2 -mt-3 md:-mt-4">
                     <span className="text-[#bd1f17] line-through font-bold text-lg md:text-xl">
                         {pizza.oldPrice}
                     </span>

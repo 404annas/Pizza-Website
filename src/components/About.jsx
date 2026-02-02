@@ -28,7 +28,7 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
           {/* Left Side - Pizza Image with LUS text */}
-          <div className="relative w-full flex justify-start items-center -translate-x-14">
+          <div className="relative w-full flex justify-start items-center px-2 md:-translate-x-14">
             {/* Pizza Image */}
             <img
               loading='lazy'
@@ -43,16 +43,16 @@ export default function About() {
             {/* Red line and subtitle */}
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-0.5 bg-[#bd1f17]"></div>
-              <p className="text-[#bd1f17] font-semibold text-base tracking-tight">
+              <p className="text-[#bd1f17] font-semibold text-sm md:text-base tracking-tight">
                 BEST ITALIAN FOOD FOR YOUR FAMILY
               </p>
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-4xl md:text-5xl font-bold text-black leading-none tracking-tighter z-10">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black leading-none tracking-tighter z-10">
               THE AMAZING PASTA
             </h1>
-            <h1 className="text-4xl md:text-5xl font-bold text-black mb-6 leading-none tracking-tighter z-10">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-6 leading-none tracking-tighter z-10">
               AND PIZZA PARLOR.
             </h1>
 
@@ -72,7 +72,7 @@ export default function About() {
             </p>
 
             {/* Button and Phone */}
-            <div className="flex items-center gap-8 mb-8">
+            <div className="flex md:flex-row flex-col items-center gap-4 md:gap-8 mb-8">
               <button className="relative overflow-hidden bg-[#232323] border border-[#232323] text-white tracking-tight px-6 py-3 font-semibold text-sm group cursor-pointer">
 
                 {/* Sliding white background */}
@@ -90,14 +90,14 @@ export default function About() {
             </div>
 
             {/* Red dot */}
-            <div className="w-3 h-3 bg-red-600 rounded-full"></div>
+            <div className="w-3 h-3 bg-red-600 rounded-full md:block hidden"></div>
           </div>
         </div>
       </section>
 
       {/* Features Section */}
       <section className="px-6 md:px-16 pb-10 bg-white">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-10">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-10">
           {features.map((item, index) => (
             <div key={index} className="flex items-center gap-6 group">
 

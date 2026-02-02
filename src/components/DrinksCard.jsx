@@ -51,7 +51,7 @@ export default function DrinksCard({ drink }) {
                 </div>
 
                 {/* Name */}
-                <h3 className="text-sm tracking-tight uppercase mb-3 md:text-xl font-bold">
+                <h3 className="text-3xl tracking-tight uppercase mb-3 md:text-xl font-black">
                     {drink.name}
                 </h3>
 

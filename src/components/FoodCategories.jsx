@@ -12,20 +12,20 @@ export default function FoodCategories({ activeCategory, onSelectCategory }) {
 
     return (
         <section className="relative bg-white py-10">
-            <div className="absolute -translate-x-30 top-20 -translate-y-1/4 z-10">
+            <div className="absolute -translate-x-32 md:-translate-x-30 top-20 -translate-y-1/4 z-10">
                 <img
                     src={shimla.src}
                     alt="Decoration"
-                    className="w-full h-70 object-cover shadow-none transform -scale-x-100"
+                    className="w-full h-60 md:h-70 object-cover shadow-none transform -scale-x-100"
                 />
             </div>
 
             <div className="max-w-7xl mx-auto px-4">
-                <h2 className="text-center text-3xl md:text-5xl font-black tracking-tight mb-16 text-[#232323]">
+                <h2 className="text-center text-2xl sm:text-3xl md:text-5xl font-black tracking-tight mb-16 text-[#232323]">
                     THE TRUE TASTE OF ITALY
                 </h2>
 
-                <div className="grid grid-cols-2 max-w-xs mx-auto gap-8">
+                <div className="grid grid-cols-2 w-60 md:max-w-xs mx-auto gap-6 md:gap-8">
                     {categories.map((cat, index) => {
                         const isSelected = activeCategory === cat.label;
                         return (
@@ -35,7 +35,7 @@ export default function FoodCategories({ activeCategory, onSelectCategory }) {
                                 className={`relative flex flex-col items-center group cursor-pointer min-w-fit transition-all duration-300 ${isSelected ? "-translate-y-1" : "hover:-translate-y-1"}`}
                             >
                                 {index !== categories.length - 1 && (
-                                    <span className="hidden lg:block absolute -right-4 top-1/2 -translate-y-1/2 h-20 w-[1px] bg-gray-200" />
+                                    <span className="absolute -right-4 top-1/2 -translate-y-1/2 h-20 w-[1px] bg-gray-200" />
                                 )}
 
                                 <div className="relative w-10 h-10 md:w-12 md:h-12 flex items-center justify-center mb-2">
