@@ -35,14 +35,14 @@ const Hero = () => {
             </div>
 
             {/* 2. TEXT LAYER (z-10) */}
-            <div className="absolute top-[12%] md:-top-[5%] left-1/2 -translate-x-1/2 z-10 flex flex-col items-center w-full z-30">
+            <div className="absolute top-[25%] md:-top-[5%] left-1/2 -translate-x-1/2 z-10 flex flex-col items-center w-full z-30">
                 <motion.div
                     initial={{ y: -50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 1, ease: premiumEase, delay: 0.2 }}
                     style={{ willChange: "transform, opacity" }}
                 >
-                    <Image src={OriginalText} alt="Original" className="w-[180px] md:w-[350px] h-auto" />
+                    <Image src={OriginalText} alt="Original" className="w-[180px] md:w-[350px] h-auto -mt-45 md:-mt-0" />
                 </motion.div>
 
                 <motion.div
@@ -56,7 +56,7 @@ const Hero = () => {
             </div>
 
             {/* 3. PIZZA LAYER (z-20) */}
-            <div className="absolute top-[38%] md:top-[10%] left-1/2 -translate-x-1/2 z-20">
+            <div className="absolute top-[30%] md:top-[10%] left-1/2 -translate-x-1/2 z-20">
                 <motion.div
                     initial={{ y: 600, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -85,7 +85,7 @@ const Hero = () => {
                     className="absolute top-[5%] right-[5%] md:right-[0%] z-30 w-32 h-32 md:w-84 md:h-84"
                     style={{ willChange: "transform" }}
                 >
-                    <div className="relative w-full h-full">
+                    <div className="relative w-full h-full md:block hidden">
                         <motion.div
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
@@ -113,7 +113,7 @@ const Hero = () => {
                 initial={{ x: -300, rotate: -45, opacity: 0 }}
                 animate={{ x: 0, rotate: 0, opacity: 1 }}
                 transition={{ duration: 1.5, ease: premiumEase, delay: 0.5 }}
-                className="absolute -left-[10%] top-[25%] w-32 md:w-60 z-10"
+                className="absolute -left-[20%] md:-left-[10%] top-[25%] w-40 md:w-60 z-10"
                 style={{ willChange: "transform, opacity" }}
             >
                 <Image src={Tomato} alt="tomato" className="w-full h-auto drop-shadow-2xl" />
@@ -123,7 +123,7 @@ const Hero = () => {
                 initial={{ x: 300, rotate: 45, opacity: 0 }}
                 animate={{ x: 0, rotate: 0, opacity: 1 }}
                 transition={{ duration: 1.5, ease: premiumEase, delay: 0.5 }}
-                className="absolute -right-[11%] top-[10%] w-32 md:w-70 z-10 scale-x-[1]"
+                className="absolute -right-[20%] md:-right-[11%] top-[10%] w-40 md:w-70 z-10 scale-x-[1]"
                 style={{ willChange: "transform, opacity" }}
             >
                 <Image src={shimla} alt="pepper" className="w-full h-auto drop-shadow-2xl" />
@@ -141,11 +141,11 @@ const Hero = () => {
                         <path d="M0,0 Q720,180 1440,0 V220 H0 Z" />
                     </svg>
 
-                    <div className="absolute top-[45%] left-[18%] w-full -translate-x-60 pointer-events-none">
+                    <div className="absolute top-[45%] left-[18%] w-full -translate-x-15 md:-translate-x-60 pointer-events-none">
                         <Image src={BelowBar} alt="herb" className="w-full" />
                     </div>
 
-                    <div className="absolute -top-[55px] md:-top-[0%] flex items-center justify-center">
+                    <div className="absolute -top-[70px] md:-top-[55px] md:-top-[0%] flex items-center justify-center">
                         <div className="absolute w-[130px] h-[130px] md:w-[200px] md:h-[200px] bg-[#d5a81f] rounded-full shadow-lg"></div>
 
                         <motion.button
@@ -154,14 +154,14 @@ const Hero = () => {
                             initial={{ y: 50, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.8, ease: premiumEase, delay: 1.8 }}
-                            className="relative w-[112px] h-[112px] md:w-[160px] md:h-[160px] bg-white rounded-full flex flex-col items-center justify-center shadow-xl z-10 cursor-pointer"
+                            className="relative w-[110px] h-[110px] md:w-[160px] md:h-[160px] bg-white rounded-full flex flex-col items-center justify-center shadow-md md:shadow-xl z-10 cursor-pointer"
                             style={{ willChange: "transform" }}
                         >
-                            <div className="absolute -top-3 md:-top-9 w-9 h-9 md:w-15 md:h-15 bg-[#c41e12] rounded-full text-white flex items-center justify-center shadow-md">
+                            <div className="absolute -top-7 md:-top-9 w-12 h-12 md:w-15 md:h-15 bg-[#c41e12] rounded-full text-white flex items-center justify-center shadow-md">
                                 <ArrowRight />
                             </div>
 
-                            <div className="flex flex-col items-center justify-center leading-none -mt-2 md:mt-5">
+                            <div className="flex flex-col items-center justify-center leading-none -mt-0 md:mt-5">
                                 <span className="text-black font-bold text-base md:text-3xl uppercase tracking-tighter">ORDER</span>
                                 <span className="text-black font-bold text-base md:text-3xl -mt-2 uppercase tracking-tighter">PIZZA</span>
                             </div>
