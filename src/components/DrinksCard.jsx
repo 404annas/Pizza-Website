@@ -28,6 +28,7 @@ export default function DrinksCard({ drink }) {
             h-80
             transition-all
             duration-300
+            object-cover
             group-hover:scale-105 cursor-pointer
           "
                 />
