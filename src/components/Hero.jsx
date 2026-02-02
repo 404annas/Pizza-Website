@@ -153,8 +153,8 @@ const Hero = () => {
                             whileTap={{ scale: 0.95 }}
                             initial={{ y: 50, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 0.8, ease: premiumEase, delay: 1.8 }}
-                            className="relative w-[110px] h-[110px] md:w-[160px] md:h-[160px] bg-white rounded-full flex flex-col items-center justify-center shadow-md md:shadow-xl z-10 cursor-pointer"
+                            transition={{ duration: 0.8, ease: premiumEase }}
+                            className="relative w-[110px] h-[110px] md:w-[170px] md:h-[170px] bg-white rounded-full flex flex-col items-center justify-center shadow-md md:shadow-xl z-10 cursor-pointer"
                             style={{ willChange: "transform" }}
                         >
                             <div className="absolute -top-7 md:-top-9 w-12 h-12 md:w-15 md:h-15 bg-[#c41e12] rounded-full text-white flex items-center justify-center shadow-md">
