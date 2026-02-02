@@ -28,6 +28,7 @@ export default function PizzaCard({ pizza }) {
             h-full
             transition-all
             duration-300
+            mb-4 px-2
             group-hover:scale-105 cursor-pointer
           "
                 />
@@ -38,11 +39,11 @@ export default function PizzaCard({ pizza }) {
                 {/* Rating */}
                 <div className="flex justify-center items-center mb-3">
                     <div className="bg-yellow-400 flex items-center gap-1 text-white text-xl px-5 py-1.5 ">
-                        <Star size={20}/>
-                        <Star size={20}/>
-                        <Star size={20}/>
-                        <Star size={20}/>
-                        <Star size={20}/>
+                        <Star size={20} />
+                        <Star size={20} />
+                        <Star size={20} />
+                        <Star size={20} />
+                        <Star size={20} />
                     </div>
                     <span className="bg-black text-white font-medium text-base px-2 py-1">
                         {pizza.rating}

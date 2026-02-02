@@ -7,7 +7,7 @@ import shimla from "@/assets/shimla.webp"
 export default function FoodCategories({ activeCategory, onSelectCategory }) {
     const categories = [
         { label: "PIZZA", img: icon1, count: "4" },
-        { label: "DRINKS", img: icon5, count: "10" },
+        { label: "DRINKS", img: icon5, count: "11" },
     ];
 
     return (

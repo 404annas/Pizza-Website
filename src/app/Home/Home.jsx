@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar'
 import About from '@/components/About'
 import React, { useState } from 'react'
 import PopularPizza from '@/components/PopularPizza'
+import PieTypes from '@/components/PieTypes'
 
 const Home = () => {
   const [category, setCategory] = useState("PIZZA")
@@ -14,8 +15,9 @@ const Home = () => {
     <div>
       <Navbar />
       <Hero />
+      <PieTypes />
       <FoodCategories activeCategory={category} onSelectCategory={setCategory} />
-      <About />
+      {/* <About /> */}
       <PopularPizza activeCategory={category} />
     </div>
   )

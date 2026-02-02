@@ -1,9 +1,9 @@
 import { useRef, useState, useEffect } from "react"; // Added useState and useEffect
 import PizzaCard from "./PizzaCard";
 import pizza1 from "@/assets/Pizza1.webp";
-import pizza2 from "@/assets/Pizza2.webp";
-import pizza3 from "@/assets/Pizza3.webp";
-import pizza4 from "@/assets/Pizza4.webp";
+import pizza2 from "@/assets/beef.png";
+import pizza3 from "@/assets/cheese.png";
+import pizza4 from "@/assets/veggie.png";
 
 import sprite from "@/assets/sprite.png";
 import fanta from "@/assets/fanta.png";
@@ -19,6 +19,7 @@ import throatle from "@/assets/throatle.png"
 
 import DrinksCard from "./DrinksCard";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import FooterBottom from "./FooterBottom";
 
 const pizzas = [
     { name: "K2 classic", image: pizza1, rating: "5.0", oldPrice: "$25.00", newPrice: "$19.00" },
@@ -145,15 +146,9 @@ export default function PopularPizza({ activeCategory }) {
             </div>
 
             {/* Explore Menu Button */}
-            <div className="absolute left-1/2 bottom-24 md:bottom-30 -translate-x-1/2 z-10 pointer-events-none">
-                <button className="w-28 h-28 rounded-full bg-yellow-400 border-[10px] border-[#bd1f17] text-black text-sm uppercase font-medium tracking-tight hover:scale-105 transition-all duration-300 leading-none cursor-pointer pointer-events-auto">
-                    Explore <br /> Menu
-                </button>
+            <div className="flex items-center justify-between">
+                <FooterBottom />
             </div>
-
-            <h1 className="text-center text-[100px] md:text-[130px] font-black tracking-tighter text-black pointer-events-none uppercase">
-                {activeCategory}
-            </h1>
         </section>
     );
 }
