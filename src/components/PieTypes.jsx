@@ -3,10 +3,11 @@ import { ZapIcon } from 'lucide-react';
 
 import slice from "@/assets/slice.png"
 import fullPizza from "@/assets/fullPizza.png"
+import Image from 'next/image';
 
 // Replace these with your actual assets
-const sliceImg = slice.src;
-const fullPieImg = fullPizza.src;
+const sliceImg = slice;
+const fullPieImg = fullPizza;
 
 const PieTypes = () => {
     const [selection, setSelection] = useState('slice'); // 'slice' or 'pie'
@@ -71,8 +72,8 @@ const PieTypes = () => {
 
                         {/* The Image */}
                         <div className="relative z-10 group transition-all duration-700 transform hover:rotate-6">
-                            <img
-                            loading='lazy'
+                            <Image
+                                priority={true}
                                 src={selection === 'slice' ? sliceImg : fullPieImg}
                                 alt="Pizza Selection"
                                 className={`w-64 md:w-[450px] object-cover transition-all duration-700 ease-in-out drop-shadow-[0_10px_10px_rgba(0,0,0,0.25)] ${selection === 'pie' ? 'scale-110' : 'scale-100 rotate-12'

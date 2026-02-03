@@ -2,6 +2,7 @@ import React from 'react';
 import icon1 from "@/assets/icon1.svg"
 import icon5 from "@/assets/icon5.svg"
 import shimla from "@/assets/shimla.webp"
+import Image from 'next/image';
 
 // Added activeCategory and onSelect props
 export default function FoodCategories({ activeCategory, onSelectCategory }) {
@@ -13,8 +14,9 @@ export default function FoodCategories({ activeCategory, onSelectCategory }) {
     return (
         <section className="relative bg-white py-10">
             <div className="absolute -translate-x-32 md:-translate-x-30 top-20 -translate-y-1/4 z-10">
-                <img
-                    src={shimla.src}
+                <Image
+                    priority={true}
+                    src={shimla}
                     alt="Decoration"
                     className="w-full h-60 md:h-70 object-cover shadow-none transform -scale-x-100"
                 />
@@ -43,10 +45,11 @@ export default function FoodCategories({ activeCategory, onSelectCategory }) {
                                         {cat.count}
                                     </div>
 
-                                    <img
-                                        loading="lazy"
-                                        src={cat.img.src}
+                                    <Image
+                                        priority={true}
+                                        src={cat.img}
                                         alt={cat.label}
+                                        width={2000}
                                         className={`w-full h-full object-contain transition-all duration-300 ${isSelected ? "scale-110" : "group-hover:opacity-80 group-hover:scale-95"}`}
                                     />
                                 </div>

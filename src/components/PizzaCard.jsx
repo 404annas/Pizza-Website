@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import Image from "next/image";
 
 export default function PizzaCard({ pizza }) {
     return (
@@ -20,17 +21,18 @@ export default function PizzaCard({ pizza }) {
         >
             {/* Image INSIDE card */}
             <div className="pt-6 flex justify-center">
-                <img
-                    src={pizza.image.src}
+                <Image
+                    priority={true}
+                    src={pizza.image}
                     alt={pizza.name}
                     className="
-            w-80
-            h-full
-            transition-all
-            duration-300
-            mb-4 px-2
-            group-hover:scale-105 cursor-pointer
-          "
+                w-80
+                h-full
+                transition-all
+                duration-300
+                mb-4 px-2
+                group-hover:scale-105 cursor-pointer
+                "
                 />
             </div>
 

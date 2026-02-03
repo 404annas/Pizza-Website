@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import Image from "next/image";
 
 export default function DrinksCard({ drink }) {
     return (
@@ -20,7 +21,8 @@ export default function DrinksCard({ drink }) {
         >
             {/* Image INSIDE card */}
             <div className="pt-6 flex justify-center">
-                <img
+                <Image
+                    priority={true}
                     src={drink.image.src}
                     alt={drink.name}
                     className="

@@ -132,13 +132,13 @@ const Navbar = () => {
                     </div>
 
                     {/* Footer Contact Info */}
-                    <div className="mt-auto bg-[#701416] p-5 rounded-2xl flex items-center gap-4">
+                    <div className="mt-auto bg-[#701416] p-4 rounded-2xl flex items-center gap-4">
                         <div className="bg-[#911a1c] p-3 rounded-full">
                             <PhoneCall size={20} fill="currentColor" className='text-yellow-400' />
                         </div>
                         <div>
                             <p className="text-xs text-white uppercase font-bold tracking-widest">Call for delivery</p>
-                            <p className="text-lg text-yellow-400 font-bold">1 800 222 000</p>
+                            <p className="text-base text-yellow-400 font-bold">1 800 222 000</p>
                         </div>
                     </div>
                 </div>
@@ -149,7 +149,7 @@ const Navbar = () => {
 
 const NavLink = ({ item, mobile }) => (
     <p className={`relative cursor-pointer group font-bold uppercase transition-colors duration-300 
-        ${mobile ? "text-lg text-white" : "text-sm text-white hover:text-yellow-400"}
+        ${mobile ? "text-base text-white" : "text-sm text-white hover:text-yellow-400"}
     `}>
         {item}
         {!mobile && (

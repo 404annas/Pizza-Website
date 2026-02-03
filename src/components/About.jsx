@@ -1,5 +1,6 @@
 import React from 'react';
 import { Truck, ShoppingBag, Clock, PhoneOutgoing, Award, Package } from 'lucide-react';
+import Image from 'next/image';
 
 export default function About() {
   const features = [
@@ -30,11 +31,11 @@ export default function About() {
           {/* Left Side - Pizza Image with LUS text */}
           <div className="relative w-full flex justify-start items-center px-2 md:-translate-x-14">
             {/* Pizza Image */}
-            <img
-              loading='lazy'
+            <Image
               src="/pizza.jpg"
               alt="Italian Pizza"
               className="w-full scale-120 h-full object-cover"
+              priority={true}
             />
           </div>
 
@@ -58,11 +59,11 @@ export default function About() {
 
             {/* Tomato Image */}
             <div className="absolute -top-20 -right-10 md:-right-50 z-0 hidden md:block">
-              <img
-                loading='lazy'
+              <Image
                 src="/tomato.webp"
                 alt="Fresh Tomato"
                 className="w-80 h-auto transform -scale-x-100 shadow-none"
+                priority={true}
               />
             </div>
 
