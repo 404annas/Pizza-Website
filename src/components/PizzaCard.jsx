@@ -66,6 +66,10 @@ export default function PizzaCard({ pizza }) {
                         {pizza.newPrice}
                     </span>
                 </div>
+
+                <div className="bg-[#bd1f17] mt-4 rounded-full font-bold tracking-tight text-white px-4 py-2 cursor-pointer hover:bg-[#991912] transition-all duration-300">
+                    <p>ORDER NOW</p>
+                </div>
             </div>
         </div>
     );

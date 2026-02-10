@@ -35,7 +35,7 @@ const Hero = () => {
             </div>
 
             {/* 2. TEXT LAYER (z-10) */}
-            <div className="absolute top-[25%] md:-top-[5%] left-1/2 -translate-x-1/2 z-10 flex flex-col items-center w-full z-30">
+            <div className="absolute top-[27%] md:-top-[5%] left-1/2 -translate-x-1/2 z-10 flex flex-col items-center w-full z-30">
                 <motion.div
                     initial={{ y: -50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -51,7 +51,8 @@ const Hero = () => {
                     transition={{ duration: 1.2, ease: premiumEase }}
                     style={{ willChange: "transform, opacity" }}
                 >
-                    <Image src={ItalianText} alt="ITALIAN" className="w-[380px] md:w-[700px] lg:w-[700px] -mt-35 h-auto" />
+                    {/* <Image src={ItalianText} alt="ITALIAN" className="w-[380px] md:w-[700px] lg:w-[700px] -mt-35 h-auto" /> */}
+                    <h1 className='text-[60px] sm:text-[100px] md:text-[130px] lg:text-[150px] -mt-20 md:-mt-14 tracking-tighter leading-none rubik text-white'>AMERICAN</h1>
                 </motion.div>
             </div>
 

@@ -47,7 +47,7 @@ const Navbar = () => {
 
                     {/* Mobile Order Button */}
                     <button className="lg:hidden flex items-center gap-2 bg-[#701416] hover:bg-white hover:text-[#701416] px-4 py-2 rounded-full font-black text-xs transition-all duration-300 shadow-inner">
-                        CONTACT
+                        ORDER
                         <Contact2 size={14} />
                     </button>
                 </div>
@@ -76,7 +76,7 @@ const Navbar = () => {
                 {/* RIGHT SIDE: Order (Desktop) / Menu Icon (Mobile) */}
                 <div className="flex items-center">
                     <button className="hidden lg:flex items-center gap-3 bg-[#701416] hover:bg-white hover:text-[#701416] px-6 py-3 rounded-full font-black text-sm transition-all duration-300 shadow-inner cursor-pointer">
-                        CONTACT
+                        ORDER
                         <Contact2 size={18} />
                     </button>
 

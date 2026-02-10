@@ -23,11 +23,11 @@ export default function DrinksCard({ drink }) {
             <div className="pt-6 flex justify-center">
                 <Image
                     priority={true}
-                    src={drink.image.src}
+                    src={drink.image}
                     alt={drink.name}
                     className="
             w-full
-            h-80
+            h-84
             transition-all
             duration-300
             object-cover
@@ -65,6 +65,10 @@ export default function DrinksCard({ drink }) {
                     <span className="font-bold text-lg md:text-xl">
                         {drink.newPrice}
                     </span>
+                </div>
+
+                <div className="bg-[#bd1f17] mt-4 rounded-full font-bold tracking-tight text-white px-4 py-2 cursor-pointer hover:bg-[#991912] transition-all duration-300">
+                    <p>ORDER NOW</p>
                 </div>
             </div>
         </div>
